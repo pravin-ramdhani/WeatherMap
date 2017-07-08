@@ -10,4 +10,11 @@
 
 @interface HomeCollectionViewCell : UICollectionViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *lblCityName;
+@property (weak, nonatomic) IBOutlet UILabel *lblTemp;
+@property (weak, nonatomic) IBOutlet UIButton *btnDelete;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *widthBtnDelete;
+
+- (IBAction)btnDeleteCityPressed:(id)sender;
+
 @end

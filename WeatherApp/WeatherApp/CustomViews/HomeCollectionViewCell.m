@@ -15,4 +15,6 @@
     // Initialization code
 }
 
+- (IBAction)btnDeleteCityPressed:(id)sender {
+}
 @end
