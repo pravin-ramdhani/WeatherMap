@@ -89,16 +89,26 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Klb-t9-8Mq"/>
                                 </connections>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No bookmarked locations, please add location from app." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KVR-sm-yez">
+                                <rect key="frame" x="30" y="313" width="315" height="41"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="svy-XT-kfg" secondAttribute="trailing" id="HYW-92-eSt"/>
+                            <constraint firstItem="KVR-sm-yez" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NUw-hw-Zxa"/>
+                            <constraint firstItem="KVR-sm-yez" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="Pvx-er-kCm"/>
                             <constraint firstItem="sdI-9Z-h0W" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ZYf-Pl-mft"/>
+                            <constraint firstItem="KVR-sm-yez" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dea-9r-6kg"/>
                             <constraint firstItem="svy-XT-kfg" firstAttribute="top" secondItem="sdI-9Z-h0W" secondAttribute="bottom" id="efg-nk-D3n"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="svy-XT-kfg" secondAttribute="bottom" id="kuV-Vw-def"/>
                             <constraint firstItem="sdI-9Z-h0W" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mTq-27-iu5"/>
                             <constraint firstAttribute="trailing" secondItem="sdI-9Z-h0W" secondAttribute="trailing" id="nyz-gL-Obb"/>
                             <constraint firstItem="svy-XT-kfg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="t1l-4d-quL"/>
+                            <constraint firstAttribute="trailing" secondItem="KVR-sm-yez" secondAttribute="trailing" constant="30" id="vpN-hF-4oU"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="FpF-1g-5Fv">
@@ -112,6 +122,7 @@
                     <connections>
                         <outlet property="btnDelete" destination="TbZ-B5-7OX" id="igO-fu-Imf"/>
                         <outlet property="collViewCity" destination="sdI-9Z-h0W" id="OTl-jc-H6Z"/>
+                        <outlet property="lblNoLocation" destination="KVR-sm-yez" id="zFW-dM-XK1"/>
                         <segue destination="RsB-CL-QoS" kind="show" identifier="loadCityVC" id="1gd-1d-L06"/>
                     </connections>
                 </viewController>

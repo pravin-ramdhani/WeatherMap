@@ -20,6 +20,7 @@
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collViewCity;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *btnDelete;
+@property (weak, nonatomic) IBOutlet UILabel *lblNoLocation;
 
 @end
 
@@ -30,8 +31,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -66,10 +65,16 @@
             if (arrCity.count > 0) {
                 [self.btnDelete setEnabled:YES];
                 [self.btnDelete setTintColor:nil];
+                self.lblNoLocation.hidden = YES;
+                self.collViewCity.hidden = NO;
+
             }
             else{
                 [self.btnDelete setEnabled:NO];
                 [self.btnDelete setTintColor: [UIColor clearColor]];
+                self.lblNoLocation.hidden = NO;
+                self.collViewCity.hidden = YES;
+
             }
         }
     }];
