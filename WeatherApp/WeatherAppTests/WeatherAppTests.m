@@ -2,7 +2,7 @@
 //  WeatherAppTests.m
 //  WeatherAppTests
 //
-//  Created by Swapnali on 08/07/17.
+//  Created by Pravin on 08/07/17.
 //  Copyright © 2017 WeatherMap. All rights reserved.
 //
 
