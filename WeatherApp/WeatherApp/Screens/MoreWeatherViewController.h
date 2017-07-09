@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CityList+CoreDataClass.h"
 
 @interface MoreWeatherViewController : UIViewController
+
+@property(strong,nonatomic) CityList *cityObj;
 
 @end
