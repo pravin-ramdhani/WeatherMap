@@ -8,6 +8,7 @@
 
 #import "ServiceManager.h"
 
+//API key for wheather app
 static NSString *strApiKey = @"c6e381d8c7ff98f0fee43775817cf6ad";
 
 @implementation ServiceManager
